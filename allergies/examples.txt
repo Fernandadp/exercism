@@ -1,0 +1,309 @@
+1
+
+- Check whether 1 is one of the elements in the allergies object
+- 1 is one of the elements
+- Look up the value for 1
+- The value is 'eggs'
+- Return ['eggs']
+
+2
+
+- Check whether 2 is one of the elements in the allergies object
+- 2 is one of the elements
+- Look up the value for 2
+- The value is 'peanuts'
+- Return ['peanuts']
+
+3
+
+- Check whether 3 is one of the elements in the allergies object
+- 3 is not one of the elements
+- Split 3 into two numbers, and we picked two because is the minimum that you can have a number split into
+- The two numbers both must be whole powers of 2 (1, 2, 4, ...)
+- The first number is 1 because it's the first whole power of 2 which isn't already an element.
+- The second number is 2 because it's the first whole power of 2 which isn't already an element. The two numbers must be different
+- Check if their sum is equal or less than 3.
+- The sum is equal to 3.
+- Look up the values of 1 and 2
+- The values are ['eggs', 'peanuts']
+- Return ['eggs', 'peanuts']
+
+4
+
+- Check whether 4 is one of the elements in the allergies object
+- 4 is one of the elements
+- Look up the value for 4
+- The value is 'shellfish'
+- Return ['shellfish']
+
+5
+
+- Check whether 5 is one of the elements in the allergies object
+- 5 is not one of the elements
+- Split 5 into two numbers, and we picked two because is the minimum that you can have a number split into
+- The two numbers both must be whole powers of 2 (1, 2, 4, ...)
+- The first number is 1 because it's the first whole power of 2 which isn't already an element.
+- The second number is 2 because it's the first whole power of 2 which isn't already an element. The two numbers must be different.
+- Check if their sum is equal or less than 5.
+- The sum is less than 5.
+- Increase the second number from 2 to 4, because it's the next whole power of 2 after 2.
+- The two numbers are now 1 and 4.
+- Check if their sum is equal or less than 5.
+- The sum is equal to 5.
+- Look up the values of 1 and 4
+- The values are ['eggs', 'shellfish']
+- Return ['eggs', 'shellfish']
+
+6
+
+- Check whether 6 is one of the elements in the allergies object
+- 6 is not one of the elements
+- Split 6 into two numbers, and we picked two because is the minimum that you can have a number split into
+- The two numbers both must be whole powers of 2 (1, 2, 4, ...)
+- The first number is 1 because it's the first whole power of 2 which isn't already an element.
+- The second number is 2 because it's the first whole power of 2 which isn't already an element. The two numbers must be different.
+- Check if their sum is equal or less than 6.
+- The sum is less than 6.
+- Increase the second number from 2 to 4, because it's the next whole power of 2 after 2 and 4 is not greater than the input, 6.
+- The two numbers are now 1 and 4.
+- Check if their sum is equal or less than 6.
+- The sum is less than 6.
+- Don't increase the second number from 4 to 8, because 8 is greater than the input, 6.
+- Increase the first number from 1 to 2, because it's the next whole power of 2 after 1 and 2 is not greater than the input, 6.
+- The two numbers are now 2 and 4.
+- Check if their sum is equal or less than 6.
+- The sum is equal to 6.
+- Look up the values of 2 and 4
+- The values are ['peanuts', 'shellfish']
+- Return ['peanuts', 'shellfish']
+
+7
+
+- Check whether 7 is one of the elements in the allergies object
+- 7 is not one of the elements
+- Split 7 into two numbers, and we picked two because is the minimum that you can have a number split into
+- The two numbers both must be whole powers of 2 (1, 2, 4, ...)
+- The first number is 1 because it's the first whole power of 2 which isn't already an element.
+- The second number is 2 because it's the first whole power of 2 which isn't already an element. The two numbers must be different.
+- Check if their sum is equal or less than 7.
+- The sum is less than 7.
+- Increase the second number from 2 to 4, because it's the next whole power of 2 after 2 and 4 is not greater than the input, 7.
+- The two numbers are now 1 and 4.
+- Check if their sum is equal or less than 6.
+- The sum is less than 7.
+- Don't increase the second number from 4 to 8, because 8 is greater than the input, 7.
+- Increase the first number from 1 to 2, because it's the next whole power of 2 after 1 and 2 is not greater than the input, 7.
+- The two numbers are now 2 and 4.
+- Check if their sum is equal or less than 7.
+- The sum is less than 7.
+- Don't increase the first number from 2 to 4, because 4 is already an element.
+- Don't increase the first number from 2 to 8, because 8 is greater than the input, 7.
+- Add a new element, so 7 is now split into three numbers.
+- The two previous numbers are still 2 and 4, the third number is set to 1 because it's the first whole power of 2 which isn't already an element.
+- Check if their sum is equal or less than 7.
+- The sum is equal to 7.
+- Look up the values of 1, 2 and 4
+- The values are ['eggs', 'peanuts', 'shellfish']
+- Return ['eggs', 'peanuts', 'shellfish']
+
+8
+
+- Check whether 8 is one of the elements in the allergies object
+- 8 is one of the elements
+- Look up the value for 8
+- The value is 'strawberries'
+- Return ['strawberries']
+
+9
+
+- Check whether 9 is one of the elements in the allergies object
+- 9 is not one of the elements
+- Split 9 into two numbers, and we picked two because is the minimum that you can have a number split into
+- The two numbers both must be whole powers of 2 (1, 2, 4, ...)
+- The first number is 1 because it's the first whole power of 2 which isn't already an element.
+- The second number is 2 because it's the first whole power of 2 which isn't already an element. The two numbers must be different.
+- Check if their sum is equal or less than 9.
+- The sum is less than 9.
+- Increase the second number from 2 to 4, because it's the next whole power of 2 after 2.
+- The two numbers are now 1 and 4.
+- Check if their sum is equal or less than 9.
+- The sum is less than 9.
+- Increase the second number from 4 to 8, because it's the next whole power of 2 after 4.
+- The two numbers are now 1 and 8.
+- Check if their sum is equal or less than 9.
+- The sum is equal than 9.
+- Look up the values of 1 and 8
+- The values are ['eggs', 'strawberries']
+- Return ['eggs', 'strawberries']
+
+10
+
+- Check whether 10 is one of the elements in the allergies object
+- 10 is not one of the elements
+- Split 10 into two numbers, and we picked two because is the minimum that you can have a number split into
+- The two numbers both must be whole powers of 2 (1, 2, 4, ...)
+- The first number is 1 because it's the first whole power of 2 which isn't already an element.
+- The second number is 2 because it's the first whole power of 2 which isn't already an element. The two numbers must be different.
+- Check if their sum is equal or less than 10.
+- The sum is less than 10.
+- Increase the second number from 2 to 4, because it's the next whole power of 2 after 2.
+- The two numbers are now 1 and 4.
+- Check if their sum is equal or less than 10.
+- The sum is less than 10.
+- Increase the second number from 4 to 8, because it's the next whole power of 2 after 4.
+- The two numbers are now 1 and 8.
+- Check if their sum is equal or less than 10.
+- The sum is less than 10.
+- Don't increase the second number from 8 to 16, because 16 is greater than the input, 10.
+- Increase the first number from 1 to 2, because it's the next whole power of 2 after 1 and 2 is not greater than the input, 10.
+- The two numbers are now 2 and 8.
+- Check if their sum is equal or less than 10.
+- The sum is equal to 10.
+- Look up the values of 2 and 8
+- The values are ['peanuts', 'strawberries']
+- Return ['peanuts', 'strawberries']
+
+11
+
+- Check whether 11 is one of the elements in the allergies object
+- 11 is not one of the elements
+- Split 11 into two numbers, and we picked two because is the minimum that you can have a number split into
+- The two numbers both must be whole powers of 2 (1, 2, 4, ...)
+- The first number is 1 because it's the first whole power of 2 which isn't already an element.
+- The second number is 2 because it's the first whole power of 2 which isn't already an element. The two numbers must be different.
+- Check if their sum is equal or less than 11.
+- The sum is less than 11.
+- Increase the second number from 2 to 4, because it's the next whole power of 2 after 2.
+- The two numbers are now 1 and 4.
+- Check if their sum is equal or less than 11.
+- The sum is less than 11.
+- Increase the second number from 4 to 8, because it's the next whole power of 2 after 4.
+- The two numbers are now 1 and 8.
+- Check if their sum is equal or less than 11.
+- The sum is less than 11.
+- Don't increase the second number from 8 to 16, because 16 is greater than the input, 11.
+- Increase the first number from 1 to 2, because it's the next whole power of 2 after 1 and 2 is not greater than the input, 11.
+- The two numbers are now 2 and 8.
+- Check if their sum is equal or less than 11.
+- The sum is less than 11.
+- Don't increase the first number from 2 to 4, because then the sum of the numbers is greater than the input, 11.
+- Add a new element, so 11 is now split into three numbers.
+- The two previous numbers are still 2 and 8, the third number is set to 1 because it's the first whole power of 2 which isn't already an element.
+- Check if their sum is equal or less than 11.
+- The sum is equal to 11.
+- Look up the values of 1, 2 and 8
+- The values are ['eggs', 'peanuts', 'strawberries']
+- Return ['eggs', 'peanuts', 'strawberries']
+
+12
+
+- Check whether 12 is one of the elements in the allergies object
+- 12 is not one of the elements
+- Split 12 into two numbers, and we picked two because is the minimum that you can have a number split into
+- The two numbers both must be whole powers of 2 (1, 2, 4, ...)
+- The first number is 1 because it's the first whole power of 2 which isn't already an element.
+- The second number is 2 because it's the first whole power of 2 which isn't already an element. The two numbers must be different.
+- Check if their sum is equal or less than 12.
+- The sum is less than 12.
+- Increase the second number from 2 to 4, because it's the next whole power of 2 after 2.
+- The two numbers are now 1 and 4.
+- Check if their sum is equal or less than 12.
+- The sum is less than 12.
+- Increase the second number from 4 to 8, because it's the next whole power of 2 after 4.
+- The two numbers are now 1 and 8.
+- Check if their sum is equal or less than 12.
+- The sum is less than 12.
+- Don't increase the second number from 8 to 16, because 16 is greater than the input, 12.
+- Increase the first number from 1 to 2, because it's the next whole power of 2 after 1 and 2 is not greater than the input, 12.
+- The two numbers are now 2 and 8.
+- Check if their sum is equal or less than 12.
+- The sum is less than 12.
+- Increase the first number from 2 to 4, because it's the next whole power of 2 after 2 and 4 is not greater than the input, 12.
+- The two numbers are now 4 and 8.
+- Check if their sum is equal or less than 12.
+- The sum is equal to 12.
+- Look up the values of 4 and 8
+- The values are ['shellfish', 'strawberries']
+- Return ['shellfish', 'strawberries']
+
+13
+
+- Check whether 13 is one of the elements in the allergies object
+- 13 is not one of the elements
+- Split 13 into two numbers, and we picked two because is the minimum that you can have a number split into
+- The two numbers both must be whole powers of 2 (1, 2, 4, ...)
+- The first number is 1 because it's the first whole power of 2 which isn't already an element.
+- The second number is 2 because it's the first whole power of 2 which isn't already an element. The two numbers must be different.
+- Check if their sum is equal or less than 13.
+- The sum is less than 13.
+- Increase the second number from 2 to 4, because it's the next whole power of 2 after 2.
+- The two numbers are now 1 and 4.
+- Check if their sum is equal or less than 13.
+- The sum is less than 13.
+- Increase the second number from 4 to 8, because it's the next whole power of 2 after 4.
+- The two numbers are now 1 and 8.
+- Check if their sum is equal or less than 13.
+- The sum is less than 13.
+- Don't increase the second number from 8 to 16, because 16 is greater than the input, 13.
+- Increase the first number from 1 to 2, because it's the next whole power of 2 after 1 and 2 is not greater than the input, 13.
+- The two numbers are now 2 and 8.
+- Check if their sum is equal or less than 13.
+- The sum is less than 13.
+- Increase the first number from 2 to 4, because it's the next whole power of 2 after 2 and 4 is not greater than the input, 13.
+- Don't increase the first number from 4 to 8, because 8 is already an element.
+- Don't increase the first number from 4 to 16, because 16 is greater than the input, 13.
+- Add a new element, so 13 is now split into three numbers.
+- The two previous numbers are still 4 and 8, the third number is set to 1 because it's the first whole power of 2 which isn't already an element.
+- Check if their sum is equal or less than 13.
+- The sum is equal to 13.
+- Look up the values of 1, 4 and 8
+- The values are ['eggs', 'shellfish', 'strawberries']
+- Return ['eggs', 'shellfish', 'strawberries']
+
+14
+
+- Check whether 14 is one of the elements in the allergies object
+- 14 is not one of the elements
+- Split 14 into two numbers, and we picked two because is the minimum that you can have a number split into
+- The two numbers both must be whole powers of 2 (1, 2, 4, ...)
+- The first number is 1 because it's the first whole power of 2 which isn't already an element.
+- The second number is 2 because it's the first whole power of 2 which isn't already an element. The two numbers must be different.
+- Check if their sum is equal or less than 14.
+- The sum is less than 14.
+- Increase the second number from 2 to 4, because it's the next whole power of 2 after 2.
+- The two numbers are now 1 and 4.
+- Check if their sum is equal or less than 14.
+- The sum is less than 14.
+- Increase the second number from 4 to 8, because it's the next whole power of 2 after 4.
+- The two numbers are now 1 and 8.
+- Check if their sum is equal or less than 14.
+- The sum is less than 14.
+- Don't increase the second number from 8 to 16, because 16 is greater than the input, 14.
+- Increase the first number from 1 to 2, because it's the next whole power of 2 after 1 and 2 is not greater than the input, 14.
+- The two numbers are now 2 and 8.
+- Check if their sum is equal or less than 14.
+- The sum is less than 14.
+- Increase the first number from 2 to 4, because it's the next whole power of 2 after 2 and 4 is not greater than the input, 14.
+- The two numbers are now 4 and 8.
+- Check if their sum is equal or less than 14.
+- The sum is less than 14.
+- Don't increase the first number from 4 to 8, because 8 is already an element.
+- Don't increase the first number from 4 to 16, because 16 is greater than the input, 14.
+- Add a new element, so 14 is now split into three numbers.
+- The two previous numbers are still 4 and 8, the third number is set to 1 because it's the first whole power of 2 which isn't already an element.
+- Check if their sum is equal or less than 14.
+- The sum is less than 14.
+- Increase the third number from 1 to 2, because it's the next whole power of 2 after 1 and 2 is not greater than the input, 14.
+
+
+
+
+
+
+
+
+
+
+
+
+
