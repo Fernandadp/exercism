@@ -1,0 +1,49 @@
+function spinalCase(str) {
+  const space = /\s/;
+  const cap = /[A-Z]/g;
+  let split = '';
+  let matches = str.match(cap);
+
+  if(cap.test(str)) {
+    for(var i = 0; i < matches.length; i++) {
+      let getIndex = str.indexOf(matches[i])
+      str = str.slice(0, getIndex) + ' ' + str.slice(getIndex);
+    }
+  }
+
+  if(space.test(str)){
+  split = str.split(' ')
+  console.log(split)
+  }
+
+  const remSpaces = split.filter(e => e !== '')
+
+  const remNoLetters = remSpaces.map(e => {
+    if(e[e.length-1] === '_') {
+      return e.slice(0, e.length-1)
+    } else {
+      return e
+    }
+  })
+
+  console.log(remNoLetters)
+
+
+  const lowerCase = remNoLetters.map(item => item.toLowerCase());
+
+  const join = lowerCase.join('-')
+
+
+  return join;
+}
+
+//spinalCase('This Is Spinal Tap');
+
+//spinalCase("thisIsSpinalTap") 
+//should return "this-is-spinal-tap".
+
+//spinalCase("AllThe-small Things") 
+//should return "all-the-small-things".
+
+//spinalCase("The_Andy_Griffith_Show") 
+//should return "the-andy-griffith-show".
