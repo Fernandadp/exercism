@@ -1,0 +1,46 @@
+function whatIsInAName(collection, source) {
+  var arr = [];
+  // Only change code below this line
+  let sourceKeys = Object.keys(source);
+  let sourceVals = Object.values(source);
+  let index = []
+
+  const exists = (prop, obj) => obj.hasOwnProperty(prop)
+
+  for(var i = 0; i < collection.length; i++) {
+    let singObj = collection[i]
+    let keys = Object.keys(singObj)
+    let vals = Object.values(singObj)
+
+    for(var j = 0; j < sourceKeys.length; j++) {
+
+      if(keys.includes(sourceKeys[j]) && vals.includes(sourceVals[j])) {
+        index.push(i)
+      } else {
+        delete collection[i]
+      }
+    }
+  }
+
+  console.log(collection.filter(e=> e))
+
+
+  arr = collection.filter(e => e)
+
+  // Only change code above this line
+  return arr;
+}
+
+
+
+whatIsInAName([{ first: "Romeo", last: "Montague" }, { first: "Mercutio", last: null }, { first: "Tybalt", last: "Capulet" }], { last: "Capulet" });
+
+//whatIsInAName([{"a": 1, "b": 2, "c": 3}], {"a": 1, "b": 9999, "c": 3}) //should return []
+
+//whatIsInAName([{ "apple": 1, "bat": 2 }, { "bat": 2 }, { "apple": 1, "bat": 2, "cookie": 2 }], { "apple": 1, "bat": 2 }) 
+//should return [{ "apple": 1, "bat": 2 }, { "apple": 1, "bat": 2, "cookie": 2 }]
+
+//whatIsInAName([{ "apple": 1, "bat": 2 }, { "apple": 1 }, { "apple": 1, "bat": 2, "cookie": 2 }], { "apple": 1, "cookie": 2 }) 
+//should return [{ "apple": 1, "bat": 2, "cookie": 2 }].
+//whatIsInAName([{ "apple": 1, "bat": 2 }, { "apple": 1 }, { "apple": 1, "bat": 2, "cookie": 2 }, { "bat":2 }], { "apple": 1, "bat": 2 }) 
+//should return [{ "apple": 1, "bat": 2 }, { "apple": 1, "bat": 2, "cookie":2 }].
