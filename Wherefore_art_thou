@@ -4,11 +4,10 @@ function whatIsInAName(collection, source) {
   let sourceKeys = Object.keys(source);
   let sourceVals = Object.values(source);
   let index = []
+  let copy = [...collection]
 
-  const exists = (prop, obj) => obj.hasOwnProperty(prop)
-
-  for(var i = 0; i < collection.length; i++) {
-    let singObj = collection[i]
+  for(var i = 0; i < copy.length; i++) {
+    let singObj = copy[i]
     let keys = Object.keys(singObj)
     let vals = Object.values(singObj)
 
@@ -17,20 +16,15 @@ function whatIsInAName(collection, source) {
       if(keys.includes(sourceKeys[j]) && vals.includes(sourceVals[j])) {
         index.push(i)
       } else {
-        delete collection[i]
+        delete copy[i]
       }
     }
   }
-
-  console.log(collection.filter(e=> e))
-
-
-  arr = collection.filter(e => e)
+  arr = copy.filter(e => e)
 
   // Only change code above this line
   return arr;
 }
-
 
 
 whatIsInAName([{ first: "Romeo", last: "Montague" }, { first: "Mercutio", last: null }, { first: "Tybalt", last: "Capulet" }], { last: "Capulet" });
